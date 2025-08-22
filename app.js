@@ -1,6 +1,6 @@
 const tiles = document.querySelectorAll('.tile')
 let i = 0;
-const svgs = ["x.svg", "O.svg" ,"triangle.svg" ];
+const svgs = ["x.svg", "O.svg" ,"triangle.svg"];
 for(const tile of tiles){
     tile.addEventListener('click' , currentPlayer)
     tile.addEventListener('click' , fill)
@@ -93,4 +93,5 @@ function winnerMessage(s){
     } 
 
 }
+
 
