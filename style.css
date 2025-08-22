@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 16px;
+}
+body{
+    background-image: linear-gradient( 75deg ,blue 35%, red ,#14FF00  ,blue 75% );
+    backdrop-filter: blur(10px);
+    height: 100vh;
+    background-size: 450%;
+    transition: background-position 1s ease;
+}
+.grid{   
+    display: grid;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    grid-template: repeat(4 , 1fr) / repeat(4 , 1fr);
+    grid-gap: 0.75rem;
+}
+.tile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5.875rem;
+    height: 5.875rem;
+    border-radius: 1.25rem;
+    background-color: #454545;
+}
+img{
+    pointer-events: none;
+    width: 4rem;
+    height: 4rem;
+}
+.message{
+    background-color: #454545;
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 1rem;
+    position: absolute;
+    top: 35rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.25rem 2rem;
+}
+.message img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+@media only screen and (max-width: 400px) {
+    :root{
+        font-size: 8px;
+    }
+}
