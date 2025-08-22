@@ -1,6 +1,6 @@
 const tiles = document.querySelectorAll('.tile')
 let i = 0;
-const svgs = ["file:///D:/HTML-projects/sites/tic%20tac%20toe/svgs/x.svg", "file:///D:/HTML-projects/sites/tic%20tac%20toe/svgs/O.svg" ,"file:///D:/HTML-projects/sites/tic%20tac%20toe/svgs/triangle.svg" ];
+const svgs = ["./x.svg", "file:///D:/HTML-projects/sites/tic%20tac%20toe/svgs/O.svg" ,"file:///D:/HTML-projects/sites/tic%20tac%20toe/svgs/triangle.svg" ];
 for(const tile of tiles){
     tile.addEventListener('click' , currentPlayer)
     tile.addEventListener('click' , fill)
@@ -91,4 +91,5 @@ function winnerMessage(s){
         message.classList.add('message')
         document.body.appendChild(message);
     } 
+
 }
